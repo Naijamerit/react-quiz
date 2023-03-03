@@ -65,7 +65,7 @@ button {
   font-size: 18px;
 }
 
-li:hover {
+button:hover {
   cursor: pointer;
 }
 
