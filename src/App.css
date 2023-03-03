@@ -65,6 +65,10 @@ button {
   font-size: 18px;
 }
 
+li:hover {
+  cursor: pointer;
+}
+
 .score_sheet {
   height: 400px;
   width: 500px;

@@ -34,10 +34,7 @@ function App() {
     window.location.reload();
   };
 
-  const [active, setActive] = useState(false);
-  const handleClick = () => {
-    setActive(!active);
-  };
+  
 
   return (
     <div className="App">
