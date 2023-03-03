@@ -60,7 +60,7 @@ function App() {
         </div>
       ) : (
         <div className="container">
-          <h1>
+          <h1 style={{color:'white'}}>
             Question {num}/{questions.length}
           </h1>
 
@@ -70,7 +70,7 @@ function App() {
 
           <div className="answers">
             {questions[index].answers.map((item, index) => (
-              <button onClick={({ handleClick }, () => isCorrect(index))}>
+              <button onClick={( () => isCorrect(index))}>
                 {item}
               </button>
             ))}
