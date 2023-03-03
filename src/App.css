@@ -1,0 +1,109 @@
+body {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 500px;
+  width: 550px;
+  background-color: rgb(23, 23, 138);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.questions {
+  height: 100px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.controllers {
+  margin-top: 30px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev,
+.next,
+.submit {
+  width: 100px;
+  height: 50px;
+  border-radius: 0px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 0px;
+  border: none;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.score_sheet {
+  height: 400px;
+  width: 500px;
+  border-radius: 30px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.display {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.correct {
+  height: 220px;
+  width: 220px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+}
+
+.failed {
+  height: 220px;
+  width: 220px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+}
