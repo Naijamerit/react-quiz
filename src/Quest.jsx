@@ -81,27 +81,15 @@ function App() {
           </div>
 
           <div className="controllers">
-            <button
-              style={{ border: 'solid 3px green' }}
-              className="prev"
-              onClick={() => prevHandler()}
-            >
+            <button className="prev" onClick={() => prevHandler()}>
               Prev
             </button>
 
-            <button
-              style={{ border: 'solid 3px green' }}
-              className="prev"
-              onClick={() => nextHandler()}
-            >
+            <button className="prev" onClick={() => nextHandler()}>
               Next
             </button>
 
-            <button
-              style={{ border: 'solid 3px green' }}
-              className="submit"
-              onClick={() => submitHandler()}
-            >
+            <button className="submit" onClick={() => submitHandler()}>
               Submit
             </button>
           </div>

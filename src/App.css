@@ -46,8 +46,8 @@ body {
 .submit {
   width: 100px;
   height: 50px;
-  border-radius: 0px;
-  border: none;
+  border-radius: 10px;
+  border: solid 2px green;
   font-size: 18px;
   font-weight: bold;
 }
