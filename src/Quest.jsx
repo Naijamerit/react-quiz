@@ -70,7 +70,7 @@ function App() {
                   isCorrect(index);
                 }}
               >
-                {item}
+                <span>{item}</span>
               </button>
             ))}
           </div>
