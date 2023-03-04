@@ -22,6 +22,10 @@ function App() {
     setShowScore(true);
   };
 
+  const resetHandler = () => {
+    window.location.reload();
+  };
+
   const isCorrect = (index) => {
     if (index + 1 === questions[index].correctIndex) {
       setCorrect((val) => val + 1);
@@ -30,34 +34,28 @@ function App() {
     }
   };
 
-  const ressetHandler = () => {
-    window.location.reload();
-  };
-
-  
-
   return (
-    <div className="App">
+    <div>
       {showScore ? (
         <div className="score_sheet">
           <div className="display">
             <div className="correct">
               <p>
-                You Scored {correct} / {questions.length}
+                you got {correct} / {questions.length}
               </p>
             </div>
             <div className="failed">
               <p>
                 {' '}
-                You failed {failed} / {questions.length}
+                you failed {failed} / {questions.length}
               </p>
             </div>
           </div>
-          <button onClick={ressetHandler}>Try again</button>
+          <button onClick={() => resetHandler()}>Try again</button>
         </div>
       ) : (
         <div className="container">
-          <h1 style={{color:'white'}}>
+          <h1 style={{ color: 'white' }}>
             Question {num}/{questions.length}
           </h1>
 
@@ -67,7 +65,11 @@ function App() {
 
           <div className="answers">
             {questions[index].answers.map((item, index) => (
-              <button onClick={( () => isCorrect(index))}>
+              <button
+                onClick={() => {
+                  isCorrect(index);
+                }}
+              >
                 {item}
               </button>
             ))}
@@ -77,9 +79,11 @@ function App() {
             <button className="prev" onClick={() => prevHandler()}>
               Prev
             </button>
-            <button className="next" onClick={() => nextHandler()}>
+
+            <button className="prev" onClick={() => nextHandler()}>
               Next
             </button>
+
             <button className="submit" onClick={() => submitHandler()}>
               Submit
             </button>

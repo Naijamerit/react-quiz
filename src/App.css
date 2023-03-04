@@ -22,7 +22,7 @@ body {
   height: 100px;
   width: 500px;
   background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  border-radius: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,10 +51,18 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
+
+.prev:focus,
+.next:focus,
+.submit:focus {
+  background-color: green;
+}
+
 .answers {
-  display: flex;
+  display: "";
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 button {
   width: 200px;
@@ -67,6 +75,9 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+button:focus {
+  background-color: gold;
 }
 
 .score_sheet {
