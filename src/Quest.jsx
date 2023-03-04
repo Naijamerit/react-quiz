@@ -41,17 +41,22 @@ function App() {
           <div className="display">
             <div className="correct">
               <p>
-                you got {correct} / {questions.length}
+                You Scored {correct} / {questions.length}
               </p>
             </div>
             <div className="failed">
               <p>
                 {' '}
-                you failed {failed} / {questions.length}
+                You Failed {failed} / {questions.length}
               </p>
             </div>
           </div>
-          <button onClick={() => resetHandler()}>Try again</button>
+          <button
+            style={{ border: 'solid 3px green' }}
+            onClick={() => resetHandler()}
+          >
+            Try again
+          </button>
         </div>
       ) : (
         <div className="container">
@@ -76,15 +81,27 @@ function App() {
           </div>
 
           <div className="controllers">
-            <button className="prev" onClick={() => prevHandler()}>
+            <button
+              style={{ border: 'solid 3px green' }}
+              className="prev"
+              onClick={() => prevHandler()}
+            >
               Prev
             </button>
 
-            <button className="prev" onClick={() => nextHandler()}>
+            <button
+              style={{ border: 'solid 3px green' }}
+              className="prev"
+              onClick={() => nextHandler()}
+            >
               Next
             </button>
 
-            <button className="submit" onClick={() => submitHandler()}>
+            <button
+              style={{ border: 'solid 3px green' }}
+              className="submit"
+              onClick={() => submitHandler()}
+            >
               Submit
             </button>
           </div>
