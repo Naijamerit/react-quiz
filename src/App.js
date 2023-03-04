@@ -1,10 +1,10 @@
 import React from 'react';
-import File from './File';
+import Questions from './Quest';
 
 export default function App() {
   return (
     <div>
-      <File />
+      <Questions />
     </div>
   );
 }
